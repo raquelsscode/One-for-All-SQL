@@ -7,6 +7,6 @@ FROM
 INNER JOIN SpotifyClone.historico AS i
   ON u.usuario_id = i.usuario_id
 INNER JOIN SpotifyClone.cancoes AS c
-  ON r.cancao_id = c.cancao_id
+  ON i.cancao_id = c.cancao_id
 GROUP BY
   usuario
